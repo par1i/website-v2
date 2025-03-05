@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --space-black: 0 0 0;
+  --space-gray: 30 30 35;
+  --space-white: 240 240 255;
+}
+
+.dark {
+  --space-black: 0 0 0;
+  --space-gray: 30 30 35;
+  --space-white: 240 240 255;
+}
+
+@layer base {
+  body {
+    @apply bg-space-black text-space-white;
+  }
+}
+
+@layer utilities {
+  .shadow-glow {
+    box-shadow: 0 0 15px 0 rgba(var(--space-white), 0.1);
+  }
+
+  .shadow-glow-intense {
+    box-shadow: 0 0 25px 0 rgba(var(--space-white), 0.2);
+  }
+
+  .bg-grid-pattern {
+    background-image: linear-gradient(to right, rgba(var(--space-white), 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(var(--space-white), 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .bg-dots-pattern {
+    background-image: radial-gradient(rgba(var(--space-white), 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .bg-space-pattern {
+    background-image: radial-gradient(rgba(var(--space-white), 0.2) 1px, transparent 2px),
+      radial-gradient(rgba(var(--space-white), 0.1) 1px, transparent 1px);
+    background-size: 50px 50px, 25px 25px;
+    background-position: 0 0, 25px 25px;
+  }
+
+  .bg-waves-pattern {
+    background: linear-gradient(135deg, rgba(var(--space-white), 0.03) 25%, transparent 25%) -10px 0,
+      linear-gradient(225deg, rgba(var(--space-white), 0.03) 25%, transparent 25%) -10px 0,
+      linear-gradient(315deg, rgba(var(--space-white), 0.03) 25%, transparent 25%),
+      linear-gradient(45deg, rgba(var(--space-white), 0.03) 25%, transparent 25%);
+    background-size: 20px 20px;
+  }
+}
+
