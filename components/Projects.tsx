@@ -43,8 +43,8 @@ export default function Projects() {
       description:
         "the best solution to pick - orgnize - note and GROUP your house furnitures",
       privateLevel: 0,
-      sourceUrl: "https://github.com/example/stellar-maps",
-      liveUrl: "https://stellar-maps.example.com",
+      sourceUrl: "",
+      liveUrl: "",
       tags: ["React", "React Router", "Material Me"],
     },
   ];
