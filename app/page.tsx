@@ -8,6 +8,7 @@ import Socials from "@/components/Socials";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("profile");
@@ -63,6 +64,7 @@ export default function Home() {
           </section>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
